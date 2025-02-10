@@ -1,0 +1,69 @@
+# Ignore Visual Studio and .NET build files
+bin/
+obj/
+.vscode/
+*.user
+*.suo
+*.psess
+*.vsp
+
+# Ignore .NET dependency files
+*.dll
+*.exe
+*.pdb
+*.cache
+*.log
+*.ldb
+
+# Ignore .NET runtime files
+project.lock.json
+project.fragment.lock.json
+
+# Ignore Entity Framework Migrations build artifacts
+Migrations/
+*.mdf
+*.ldf
+
+# Ignore app secrets & sensitive data
+secrets.json
+appsettings.Development.json
+appsettings.Local.json
+appsettings.Production.json
+appsettings.Staging.json
+
+# Ignore database backup files
+*.bak
+*.sql
+
+# Ignore npm & Angular build files
+node_modules/
+dist/
+.angular/
+coverage/
+
+# Ignore environment configuration files
+src/environments/environment.ts
+src/environments/environment.prod.ts
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logs/
+*.log
+
+# Ignore Angular dependency & package lock
+package-lock.json
+yarn.lock
+
+# Ignore compiled TypeScript files
+*.tsbuildinfo
+
+# Ignore IDE/editor-specific files
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Ignore GitHub workflow logs
+.github/workflows/*.log
