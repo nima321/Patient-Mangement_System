@@ -35,9 +35,9 @@ git clone https://github.com/your-username/patient-management-system.git
 cd patient-management-system
 ```
 ---
-# **📦 Backend Setup (ASP.NET 8 Web API)**
+# **📦Setp 3 Backend Setup (ASP.NET 8 Web API)**
 
-## **🔹 Install Dependencies**
+## **🔹Step 4 Install Dependencies**
 Run the following:
 
 ```bash

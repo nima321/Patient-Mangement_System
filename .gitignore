@@ -1,3 +1,5 @@
+# Global ignores (for the whole repo)
+
 # Ignore Visual Studio and .NET build files
 bin/
 obj/
@@ -36,7 +38,7 @@ appsettings.Staging.json
 *.sql
 
 # Ignore npm & Angular build files
-node_modules/
+node_modules/  # Keeps node_modules out globally
 dist/
 .angular/
 coverage/
