@@ -37,11 +37,12 @@ appsettings.Staging.json
 *.bak
 *.sql
 
-# Ignore npm & Angular build files
-node_modules/  # Keeps node_modules out globally
-dist/
-.angular/
-coverage/
+# Ignore npm & Angular build files in frontend only
+frontend/node_modules/  # Ignore frontend node_modules only
+frontend/dist/          # Ignore frontend build files
+frontend/.angular/      # Ignore Angular build files
+frontend/coverage/      # Ignore Angular test coverage reports
+
 
 # Ignore environment configuration files
 src/environments/environment.ts
