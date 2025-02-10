@@ -14,6 +14,7 @@ export class RegisterComponent {
   role: string = 'User';
   message: string = '';
   errorMessage: string = '';
+  response: string='';
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -31,13 +32,15 @@ export class RegisterComponent {
       passwordHash: this.password,
       role: this.role
     }).subscribe(
-      () => {
-        this.message = 'Registration successful!';
-        alert('You have been successfully registered!');  // Show the success popup
-        setTimeout(() => this.router.navigate(['/login']), 15);
+      (response) => {
+        if (response ==="User registered successfully!") {
+          this.message = 'User registered successfully!';
+           
+        }
       },
-      () => {
-        this.message = 'Error registering user';
+      (error) => {
+        alert('You have been successfully registered!');  // Show the success popup
+          setTimeout(() => this.router.navigate(['/login']), 1500); // Wait 1.5 seconds before navigating
       }
     );
   }
