@@ -1,0 +1,126 @@
+/* General Styles for the Container */
+.bg-light {
+    background-color: #f8f9fa !important;
+  }
+  
+  .container {
+    max-width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .card {
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header Styling */
+  h4.text-center {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #333;
+  }
+
+  h1{
+    font-weight:bold;
+    font-family:'Times New Roman', Times, serif ;
+    color: #0056b3;
+  }
+  
+  /* Form Field Styling */
+  .form-floating {
+    position: relative;
+  }
+  
+  .form-control {
+    border-radius: 12px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: inset 0 2px 5px rgba(0, 123, 255, 0.3);
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background: linear-gradient(145deg, #007bff, #0056b3);
+    border-radius: 50px;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+  }
+  
+  .btn-primary:hover {
+    background: linear-gradient(145deg, #0056b3, #007bff);
+  }
+  
+  .bsb-btn-2xl {
+    font-size: 1.2rem;
+    padding: 12px 25px;
+  }
+  
+  .d-grid .btn-lg {
+    border-radius: 50px;
+  }
+  
+  /* Error Message Styling */
+  .text-danger {
+    font-size: 0.875rem;
+    color: #dc3545;
+    font-weight: 500;
+  }
+  
+  /* Remember Me Checkbox */
+  .form-check-label {
+    font-size: 0.875rem;
+    color: #555;
+  }
+  
+  .form-check-input {
+    transform: scale(1.2);
+    margin-top: 3px;
+  }
+  
+  /* Links (Create New Account, Forgot Password) */
+  .link-secondary {
+    font-size: 0.875rem;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .link-secondary:hover {
+    color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 767px) {
+    .col-12 {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  
+    .card-body {
+      padding: 2rem;
+    }
+  
+    h4.text-center {
+      font-size: 1.3rem;
+    }
+  }
+  

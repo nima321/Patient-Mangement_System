@@ -9,6 +9,7 @@ obj/
 *.psess
 *.vsp
 
+
 # Ignore .NET dependency files
 *.dll
 *.exe
@@ -35,16 +36,26 @@ appsettings.Staging.json
 
 # Ignore database backup files
 *.bak
-*.sql
 
-# Ignore npm & Angular build files in frontend only
-node_modules/  # Ignore frontend node_modules only
+/.angular/cache
+.sass-cache/
+/connect.lock
+/coverage
+/libpeerconnection.log
+testem.log
+/typings
+
+# Ignore npm & Angular build files in frontend onl
 dist/          # Ignore frontend build files
-.angular/      # Ignore Angular build files
+
 coverage/      # Ignore Angular test coverage reports
+node_modules
 
 
 
+# Ignore environment configuration files
+src/environments/environment.ts
+src/environments/environment.prod.ts
 
 # Ignore log files
 npm-debug.log*
@@ -68,3 +79,5 @@ yarn.lock
 
 # Ignore GitHub workflow logs
 .github/workflows/*.log
+
+./angular

@@ -1,0 +1,109 @@
+/* General styling */
+.patient-form-container {
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .Card{
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-left: 25%;
+    padding: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 15px;
+
+  }
+  /* Header */
+  h2 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Input fields */
+  input[type="text"],
+  input[type="date"],
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input[type="text"]:focus,
+  input[type="date"]:focus,
+  select:focus {
+    border-color: #4caf50;
+    outline: none;
+  }
+  
+  /* Error messages */
+  small {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  div {
+    position: relative;
+  }
+  
+  /* Submit button */
+  button {
+    padding: 10px 20px;
+    background-color:var(--primary-color);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Success or error message */
+  p {
+    text-align: center;
+    font-size: 14px;
+    color: #4caf50;
+    margin-top: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .patient-form-container {
+      padding: 15px;
+    }
+  
+    h2 {
+      font-size: 20px;
+    }
+  
+    input[type="text"],
+    input[type="date"],
+    select {
+      font-size: 14px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,43 @@
+<div class="patient-report-container">
+    <app-navbar></app-navbar>
+<div class="search"> 
+<form class="d-flex" role="search">
+    <h4>Patient Report Page</h4>
+    <input class="form-control me-2" type="search" style="width: 300px;"
+    placeholder="Search by PatientNo" [(ngModel)]="searchPatientNo" name="searchPatientNo">
+    <button class="btn btn-outline-success" type="submit" (click)="searchPatient()"
+    style="margin-right: 5px;"
+     >Search
+    </button>
+    <button class="btn btn-outline-success" type="submit" (click)="getPatients()">Reset</button>
+  </form>
+</div>  
+    
+    <table >
+      <tr>
+        <th>Patient No</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Contact</th>
+        <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th> <!-- New Column for Delete Button -->
+      </tr>
+      <tr *ngFor="let patient of patients">
+       
+        <td>{{ patient.id }}</td>
+        <td>{{ patient.name }}</td>
+        <td>{{ patient.gender }}</td>
+        <td>{{ patient.contactNumber }}</td>
+        <td>{{ patient.address }}</td>
+        <td>
+          <button (click)="editPatient(patient)">Edit</button>
+        </td>
+        <td>
+          <button (click)="deletePatient(patient.id)" style="background-color: red; color: white;">Delete</button>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+  

@@ -1,0 +1,43 @@
+<div class="patient-form-container">
+    <app-navbar></app-navbar>
+    
+
+    <div class="Card">
+    <form [formGroup]="patientForm" (ngSubmit)="addPatient()">
+      <div>
+            <label for="patientNo" style="font-weight: bold;font-size:15px" >Patient No :</label>
+            <input id="patientNo" style="font-weight: bold;font-size:15px" formControlName="patientNo" readonly>
+        </div>
+      <input type="text" placeholder="Name" formControlName="name">
+      <div *ngIf="patientForm.get('name')?.invalid && patientForm.get('name')?.touched">
+        <small>Name is required (min 3 characters).</small>
+      </div>
+  
+      <input type="date" placeholder="Date of Birth" formControlName="dateOfBirth">
+      <div *ngIf="patientForm.get('dateOfBirth')?.invalid && patientForm.get('dateOfBirth')?.touched">
+        <small>Date of Birth is required.</small>
+      </div>
+  
+      <select formControlName="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+  
+      <input type="text" placeholder="Contact Number" formControlName="contactNumber">
+      <div *ngIf="patientForm.get('contactNumber')?.invalid && patientForm.get('contactNumber')?.touched">
+        <small>Enter a valid 10-digit number.</small>
+      </div>
+  
+      <input type="text" placeholder="Address" formControlName="address">
+      <div *ngIf="patientForm.get('address')?.invalid && patientForm.get('address')?.touched">
+        <small>Address is required.</small>
+      </div>
+  
+      <button type="submit" >Add Patient</button>
+  
+      <p>{{ message }}</p>
+    </form>
+</div>
+  </div>
+  
